@@ -6,6 +6,9 @@ use InvalidArgumentException;
 
 class MySqlDateExpression extends DateExpression
 {
+    /**
+     * Get the value of the expression.
+     */
     public function getValue(): string
     {
         switch ($this->getUnit()) {

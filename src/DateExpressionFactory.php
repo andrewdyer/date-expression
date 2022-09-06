@@ -8,6 +8,9 @@ use InvalidArgumentException;
 
 class DateExpressionFactory
 {
+    /**
+     * Create a new date expression instance.
+     */
     public static function create(Builder $query, string $column, string $unit): Expression
     {
         $driver = $query->getConnection()->getDriverName();
